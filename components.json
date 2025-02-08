@@ -7,10 +7,10 @@
 		"baseColor": "slate"
 	},
 	"aliases": {
-		"components": "resources/js/components",
-		"utils": "resources/js/utils",
-		"ui": "resources/js/components/ui",
-		"hooks": "resources/js/hooks"
+		"components": "/resources/js/components",
+		"utils": "/resources/js/utils",
+		"ui": "/resources/js/components/ui",
+		"hooks": "/resources/js/hooks"
 	},
 	"typescript": false,
 	"registry": "https://next.shadcn-svelte.com/registry"

@@ -1,6 +1,6 @@
 <script>
     // import Layout from './Layout.svelte'
-    import Button from "$lib/components/ui/button/button.svelte";
+    // import Button from "$lib/components/ui/button/button.svelte";
 
     export let user;
 </script>
@@ -12,4 +12,5 @@
 <!-- <Layout> -->
 <h1>Welcome</h1>
 <p>Hello {user}, welcome to your first Inertia app!</p>
+<!-- <Button href="/dashboard">Dashboard</Button> -->
 <!-- </Layout> -->

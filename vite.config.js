@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-// import vue from '@vitejs/plugin-vue';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import path from 'path';
 
@@ -14,8 +13,8 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            $lib: path.resolve("./resources/js"),
-            $css: path.resolve("./resources/css"),
+            $lib: "/resources/js",
+            $css: "/resources/css",
         },
     },
     plugins: [
@@ -24,13 +23,5 @@ export default defineConfig({
             refresh: true,
         }),
         svelte(),
-        // vue({
-        //     template: {
-        //         transformAssetUrls: {
-        //             base: null,
-        //             includeAbsolute: false,
-        //         },
-        //     },
-        // }),
     ],
 });
