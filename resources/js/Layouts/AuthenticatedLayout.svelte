@@ -1,11 +1,8 @@
 <script>
     import { onMount } from 'svelte';
     import { page } from '@inertiajs/svelte';
-    import ApplicationLogo from '@/Components/ApplicationLogo.svelte';
-    import Dropdown from '@/Components/Dropdown.svelte';
-    import DropdownLink from '@/Components/DropdownLink.svelte';
-    import NavLink from '@/Components/NavLink.svelte';
-    import ResponsiveNavLink from '@/Components/ResponsiveNavLink.svelte';
+    import ApplicationLogo from '@/components/ApplicationLogo.svelte';
+    
     import { Link } from '@inertiajs/svelte';
 
     let showingNavigationDropdown = false;

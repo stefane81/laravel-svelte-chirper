@@ -7,13 +7,15 @@ import path from 'path';
 export default defineConfig({
     "compilerOptions": {
         "paths": {
-            "$lib": ["./resources/lib"],
-            "$lib/*": ["./resources/lib/*"]
+            "$lib": ["./resources/js"],
+            "$lib/*": ["./resources/js/*"],
+            "$css": ["./resources/css"],
         }
     },
     resolve: {
         alias: {
-            $lib: path.resolve("./resources/lib"),
+            $lib: path.resolve("./resources/js"),
+            $css: path.resolve("./resources/css"),
         },
     },
     plugins: [

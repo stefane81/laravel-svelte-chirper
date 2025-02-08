@@ -1,5 +1,6 @@
 <script>
     // import Layout from './Layout.svelte'
+    import Button from "$lib/components/ui/button/button.svelte";
 
     export let user;
 </script>

@@ -1,4 +1,4 @@
 <script>
-	import './app.css';
+	import '$css/app.pcss';
 </script>
 
