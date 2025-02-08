@@ -2,8 +2,20 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 // import vue from '@vitejs/plugin-vue';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
+import path from 'path';
 
 export default defineConfig({
+    "compilerOptions": {
+        "paths": {
+            "$lib": ["./resources/lib"],
+            "$lib/*": ["./resources/lib/*"]
+        }
+    },
+    resolve: {
+        alias: {
+            $lib: path.resolve("./resources/lib"),
+        },
+    },
     plugins: [
         laravel({
             input: 'resources/js/app.js',
