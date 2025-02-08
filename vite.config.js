@@ -1,3 +1,4 @@
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
@@ -13,15 +14,12 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            $lib: "/resources/js",
-            $css: "/resources/css",
+            $lib: path.resolve("/resources/js"),
+            $css: path.resolve("/resources/css"),
         },
     },
-    plugins: [
-        laravel({
-            input: 'resources/js/app.js',
-            refresh: true,
-        }),
-        svelte(),
-    ],
+    plugins: [laravel({
+        input: 'resources/js/app.js',
+        refresh: true,
+    }), svelte(), tailwindcss()],
 });
