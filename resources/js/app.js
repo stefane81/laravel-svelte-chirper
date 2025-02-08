@@ -9,7 +9,7 @@ const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 createInertiaApp({
   resolve: name => {
     const pages = import.meta.glob('./pages/**/*.svelte', { eager: true })
-    return pages[`./Pages/${name}.svelte`]
+    return pages[`./pages/${name}.svelte`]
   },
   setup({ el, App, props }) {
     mount(App, { target: el, props })
